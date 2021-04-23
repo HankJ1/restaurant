@@ -1,0 +1,229 @@
+
+body {
+    margin: 0;
+    overflow: auto;
+    background-color: black;
+}
+
+.main-photo {
+    position: relative;
+    margin-top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 60vh;
+    /* background-image: url("https://joeyrestaurants.com/assets/craftAssets/Uvilliage_Hero1.jpg"); */
+    background-image: url('../images/homepage.jpeg');
+    background-size: cover;
+    background-position: center center;
+}
+
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        max-width: 100%;
+        height: 75px;
+        background-color: rgba(3, 3, 3, 0.611);
+        z-index: 5;
+    }
+        .slogan {
+            position: absolute;
+            /* float: center; */
+            color: white;
+            font-size: 22px;
+            left: 50vw;
+            transform:translate(-50%, 0);
+            top: 20px;
+            font-family: Geneva, Tahoma, sans-serif;
+        }
+        .logo {
+            float: left;
+            height: 100%; 
+            width: 150px;
+            margin-top: 15px;
+            margin-left: 30px;
+            /* background-image: url("https://jimmysinjackson.com/wp-content/uploads/2018/05/jimmys-logo-456x150.png"); */
+            background-image: url('../images/logo.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .contact {
+            float: right;
+            background: none;
+            color: white;
+            border: none;
+            margin-right: 20px;
+            height: 60px;
+            font-size: 22px;
+        }
+        .menu, .home {
+            float: right;
+            background: none;
+            color: white;
+            border: none;
+
+            height: 60px;
+            font-size: 22px;
+        }
+            button:focus {
+                outline: none;
+                border: none;
+            }
+        .contact, .menu, .home {
+            margin-top: 5px;
+        }
+        .contact, .menu, .home:hover {
+            cursor: pointer;
+        }
+
+    .name-greeting {
+        position: absolute;
+        width: 80vw;
+        max-width: 80vw;
+        top: 25vh;
+        left: 50vw;
+        transform: translate(-50%, 0);
+        color: white;
+        font-size: 42px;
+        text-align: center;
+        font-family: "Brandon","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: 700;
+
+    }
+
+    .takeout-button {
+        position: relative;
+        margin-top: 10px;
+        height: 65px;
+        width: 250px;
+        background: none;
+        border: 2px solid white;
+        z-index: 3;
+        color: white;
+        font-size: 26px;
+        font-family: "Brandon","Helvetica Neue",Helvetica,Arial,sans-serif;
+        transition:all 0.5s;
+
+    }
+        .takeout-button:hover {
+            color: black;
+            background-color: rgba(255, 255, 255, .7);
+        }
+
+.black-square {
+    position: relative;
+    /* margin-top: -30px; */
+    /* min-height: 300px; */
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    background-color: black;
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+    .blurb-container {
+        display: inline-block;
+        position: relative;
+        width: 75vw;
+        max-width: 75vw;
+        left: 50vw;
+        transform: translate(-50%, 0);
+        top: 10px;
+        padding-bottom: 50px;
+        text-align: center;
+        overflow: hidden;
+    }
+        .blurb {
+            color: white;
+            font-family: "Brandon","Helvetica Neue",Helvetica,Arial,sans-serif;
+            white-space: pre-wrap;
+            
+        }
+        .spacer {
+            position: relative;
+            width: 75%;
+            max-width: 75%;
+            height: 1px;
+            background-color: white;
+            margin: 17px 0 0 0;
+            left: 50%;
+            transform:translate(-50%, 0);
+        }
+
+        .blurb2 {
+            color: white;
+            font-family: "Brandon","Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 22px;
+        }
+
+.footer {
+    position: fixed;
+    display: flex;
+    /* column-gap: 20px;; */
+    justify-content: center;
+    bottom: 0;
+    height: 75px;
+    width: 100%;
+    max-width: 100%;
+    background-color: black;
+    z-index: 5;
+}
+    .fb {
+        /* background-image: url("https://joeyrestaurants.com/assets/images/facebook-icon.png"); */
+        background-image: url('../images/facebook-icon.png');
+        height: 35px;
+        width: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: 6;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .insta {
+        /* background-image: url("https://joeyrestaurants.com/assets/images/instagram-icon.png"); */
+        background-image: url('../images/instagram-icon.png');
+        height: 65px;
+        width: 40px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: 6;
+        margin-top: 6px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .twitter {
+        /* background-image: url("https://joeyrestaurants.com/assets/images/twitter-icon.png"); */
+        background-image: url('../images/twitter-icon.png');
+        height: 55px;
+        width: 37px;
+        /* border-radius: 50px; */
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: 6;
+        margin-top: 11px;
+        margin-left: 14px;
+        margin-right: 10px;
+    }
+
+    @media (max-width: 920px) {
+        .slogan, .menu, .contact, .home {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 750px) {
+        .slogan {
+            display: none;
+        }
+    }
+
+    @media (max-width: 425px) {
+        .slogan, .menu, .contact, .home {
+            font-size: 14px;
+        }
+    }
+    
